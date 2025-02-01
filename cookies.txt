@@ -1,9 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-autograph.care	TRUE	/	FALSE	1999999999	uncode_privacy[consent_types]	%5B%5D
-autograph.care	TRUE	/	FALSE	1999999999	SameSite	Strict
-.vimeo.com	TRUE	/	FALSE	1999999999	__cf_bm	rJs2oCRxEsIk25Lc0kLQ5eukpPxlKPYVF5ssblitiRU-1736698631-1.0.1.1-QC6qoVHPMj6VyIja9tMy22Cry00OvxR7OftT5AvvmnO8KsSb38QpkFW8Fp84d434
-.vimeo.com	TRUE	/	FALSE	1999999999	_cfuvid	HI7Ncy_eryfhwVpMJs07gKNyyRNtYJcq1GsoA1d.kj8-1736698631358-0.0.1.1-604800000
-player.vimeo.com	TRUE	/	FALSE	1999999999	SameSite	None
-.carehome.co.uk	TRUE	/	FALSE	1999999999	incap_ses_6555_1339251	0sUOdCBDEnFlVkoQ9gn4Wi/rg2cAAAAAzeTHrDsvFU4VlDaFjqe2YQ==
-
