@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deen Care Home</title>
+    <style>
+        :root {
+            --primary-pink: #0F4C81;
+            --dark-blue: #0F4C81;
+            --light-pink: #FFF5F3;
+            --accent-pink: #FFB5AA;
+            --text-gray: #4A4A4A;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #ffffff;
+            color: var(--text-gray);
+        }
+        
+  /* Header Styles */
+  .top-bar {
+            background-color: #fff1f1;
+            padding: 0.5rem 2rem;
+            display: flex;
+            justify-content: flex-end;
+            gap: 2rem;
+            font-size: 0.9rem;
+        }
+
+        .top-bar a {
+            color: #333;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .main-header {
+            padding: 1rem 2rem;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            color: #1a4c5b;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: #1a4c5b;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .book-stay-btn {
+            background-color: #ffb4b4;
+            color: #333;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        
+        nav a {
+            color: var(--dark-blue);
+            text-decoration: none;
+            font-size: 16px;
+            padding: 8px 16px;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--accent-pink);
+        }
+        
+        .book-button {
+            background: var(--accent-pink);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .book-button:hover {
+            background: var(--primary-pink);
+            color: var(--dark-blue);
+        }
+        
+        .intro {
+            text-align: center;
+            padding: 40px 20px;
+            background: var(--light-pink);
+            margin: 0 auto;
+        }
+        
+        .intro h2 {
+            color: var(--dark-blue);
+            font-size: 24px;
+            margin-bottom: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .intro p {
+            color: var(--text-gray);
+            margin: 10px 0;
+        }
+        
+        .source {
+            text-align: center;
+            color: var(--text-gray);
+            margin: 30px 0;
+            font-size: 14px;
+        }
+        
+        .testimonials {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .testimonial {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .testimonial-content {
+            margin-bottom: 20px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .testimonial-author {
+            color: var(--dark-blue);
+            font-weight: 500;
+            text-align: right;
+        }
+        
+        .rating {
+            color: var(--accent-pink);
+            font-size: 20px;
+            text-align: right;
+            margin-top: 10px;
+        }
+        
+        footer {
+            background: var(--dark-blue);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+        
+        .social-links {
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: var(--accent-pink);
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <a href="tel:01622620643">
+            <span>Care enquiries 01622 620 643</span>
+        </a>
+        <a href="/our-people/careers.html">Careers</a>
+    </div>
+    
+    <!-- Main Header -->
+    <header class="main-header">
+        <a href="/" class="logo">Deen™</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/index.html"><b>Home</b></a></li>
+                <li><a href="/life-in-our-home"><b>Life in our home</b></a></li>
+                <li><a href="/our-care"><b>Our Care</b></a></li>
+                <li><a href="/about"><b>About</b></a></li>
+                <li><a href="/get-in-touch"><b>Get in touch</b></a></li>
+                <li><a href="/book-your-stay/index.html" class="book-stay-btn"><b>Book Your Stay</b></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section class="intro">
+        <h2>We believe Sycamore Lodge is the best care home you could possibly choose for your loved one.</h2>
+        <p>But don't just take our word for it.</p>
+        <p>Here are reviews, comments and testimonials from the people who really know what it's like to live here - our residents and their families.</p>
+    </section>
+    
+    <div class="source">From www.CareHome.co.uk</div>
+    
+    <section class="testimonials">
+        <div class="testimonial">
+            <div class="testimonial-content">
+                Dear Zuzanna,<br>
+
+<i>I wanted to send you this email on behalf of Diane's family to say a very big thank you to all members of
+Sycamore Lodge staff who looked after Mum during her very short time with you.
+The care which you all showed towards Mum was outstanding. We were all so pleased when Mum moved into Sycamore Lodge especially after meeting various staff members, we knew that she would be well looked after and cared for with dignity and respect.
+Everyone we came in contact with was always friendly, on the few visits to Mum, in room 28, we were made to feel welcome and nothing was too much trouble even though the staff have such busy and demanding roles.
+I am sorry that I do not know the names of everyone we came across, but Mum was in residence from 5th November until she was taken into hospital on 10th November.
+I would like to give special thanks to Andrew and to Chris.
+Andrew provided myself and Dad with so much reassurance that Mum would be looked after and cared for well, this was good to hear as we, as a family, had never experienced anything like this life-changing situation before.
+We had experienced some issues with Mums discharge from the Hospital, Andrew was already aware of, again this gave us confidence and we knew that Mum was in caring and very professional hands. Please pass on our thanks and gratitude to Andrew, and wish him all the very best, he certainly has made the right career choice, but tell him he still needs to book the odd holiday.
+Chris was so kind, professional and thoughtful when I personally liaised with him on Mum's return to Sycamore Lodge from hospital on the evening of the 10th November and again during the very early hours of Thursday 11th November.
+Chris's reassuring manner and caring words made a very difficult time calmer. We know that Mums final hours will have been peaceful and that she was cared for so very well, we will be forever grateful to Chris and his night team for making Mum as comfortable as possible in her final hours.
+Please pass on our grateful thanks to Chris, I personally will never forget his phone call and his gentle kind manner. A thank you to the girls who provided us with tea and biscuits during those early hours, this was very much appreciated.
+The Sycamore Lodge team are a great credit to the Marjara Care Group, please pass my comments on to all staff members and our thanks once again to you all.
+Kindest Regards to you all</i>
+            </div>
+            <div class="testimonial-author">Deborah Hollis and All Family</div>
+            <div class="rating">★★★★★</div>
+        </div>
+        
+        <div class="testimonial">
+            <div class="testimonial-content">
+                <i>We just wanted to drop you an email to express our gratitude to your staff member Sonia MacDonald at Sycamore Lodge. After several years of not seeing our father / grandad she has given us the opportunity to contact him on Skype. It means so much to both his NZ family and him. She is a credit to your organisation. Many Thanks.</i>
+            </div>
+            <div class="testimonial-author">Chris and Kerry F.</div>
+            <div class="rating">★★★★★</div>
+        </div>
+        
+        <div class="testimonial">
+            <div class="testimonial-content">
+                <i>"Thank you so much for all the care and attention you gave to Rex. We will always remember his smile and how you all too, take care of yourself."</i>
+            </div>
+            <div class="testimonial-author">Joan & Don A.</div>
+            <div class="rating">★★★★★</div>
+        </div>
+
+        <div class="testimonial">
+            <div class="testimonial-content">
+                <i>What a great team you are!  your hard work, love, care, kindness and support has been commendable! You have all made a difficult time much easier for mum, myself and my family! Nothing has been too much trouble for you. Your friendship, love and hugs has been much appreciated. Thanks again to you all! I will miss you all.  Love always.</i>
+            </div>
+            <div class="testimonial-author">Miguel</div>
+            <div class="rating">★★★★★</div>
+        </div>
+
+        <div class="testimonial">
+            <div class="testimonial-content">
+                <i>Thank you for all the help and compassion, I received while in your care, it was an uplifting experience and everyone was helpful during my stay. Once again many thanks!</i>
+            </div>
+            <div class="testimonial-author">Brenda L.</div>
+            <div class="rating">★★★★★</div>
+        </div>
+
+        <div class="testimonial">
+            <div class="testimonial-content">
+                <i>To all the staff, a very big thank you for all you did for my aunt.</i>
+            </div>
+            <div class="testimonial-author">Mary H.</div>
+            <div class="rating">★★★★★</div>
+        </div>
+
+        <div class="testimonial">
+            <div class="testimonial-content">
+                <i></i>Julie, David and I would like to say how grateful we were for all the work the staff had undertaken to make my mother's hundredth birthday ton a success. We all appreciated their thoughtfulness and kindness. Thank you.</i>
+            </div>
+            <div class="testimonial-author">Richard S.</div>
+            <div class="rating">★★★★★</div>
+        </div>
+
+        
+        <div class="testimonial">
+            <div class="testimonial-content">
+                <i>To all staff, could you please pass on my thanks to the staff at your care home. My mother was not in your care for a long time, but in her eyes this was her home. As you all know my mother had dementia and coupled with the fact she could not talk. Whilst she was within your care, my wife and I understand from my mothers wards that she felt safe and secure in your care. I had a chat in the office because we would have liked my mother to stay at your home after her leg was better. My mother actually called her home in Barton as her old home, and because of the care and love gives her yours was thought of as her new home. Again, thank you for the care and support you gave to my mother and to myself and family.</i>
+            </div>
+            <div class="testimonial-author">Mr. Stewart</div>
+            <div class="rating">★★★★★</div>
+        </div>
+
+        <div class="testimonial">
+            <div class="testimonial-content">
+                <i>Thank you everyone for looking after our mum. She was a very special person. Thank you for your caring attitude and dignity you gave her.</i>
+            </div>
+            <div class="testimonial-author">Caroline, Steven and the late Elaine</div>
+            <div class="rating">★★★★★</div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+        <p>&copy; 2024 UK West Ltd</p>
+    </footer>
+</body>
+</html>

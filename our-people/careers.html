@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deen Care Home - Recruitment</title>
+    <style>
+        :root {
+            --primary-color: #0a192f;
+            --secondary-color: #ffb4b4;
+            --text-color: #333;
+            --light-bg: #f9f9f9;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            line-height: 1.6;
+            background: var(--light-bg);
+        }
+
+        /* Header Styles */
+        .top-bar {
+            background-color: #fff1f1;
+            padding: 0.5rem 2rem;
+            display: flex;
+            justify-content: flex-end;
+            gap: 2rem;
+            font-size: 0.9rem;
+        }
+
+        .top-bar a {
+            color: #333;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .main-header {
+            padding: 1rem 2rem;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            color: #1a4c5b;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: #1a4c5b;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .book-stay-btn {
+            background-color: #ffb4b4;
+            color: #333;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: white;
+        }
+
+        .hero h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .content-section {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .vacancies-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .vacancies-list li {
+            padding: 1rem;
+            margin: 0.5rem 0;
+            background: var(--light-bg);
+            border-left: 4px solid var(--primary-color);
+            border-radius: 0 4px 4px 0;
+        }
+
+        .job-details {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .job-details h3 {
+            color: var(--secondary-color);
+            margin-top: 0;
+        }
+
+        .requirements-list {
+            padding-left: 1.5rem;
+        }
+
+        .contact-form {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .form-group {
+            display: grid;
+            gap: 0.5rem;
+        }
+
+        input, textarea {
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background: #ffb4b4;
+        }
+
+        footer {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .content-section {
+                margin: 1rem;
+                padding: 1rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        .apply-button {
+            display: block;
+            width: max-content;
+            margin: 2rem auto;
+            padding: 1.2rem 3rem;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .apply-button:hover {
+            background: #ffb4b4;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .apply-section {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 2rem auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <a href="tel:01622620643">
+            <span>Care enquiries 01622 620 643</span>
+        </a>
+        <a href="/careers">Careers</a>
+    </div>
+    
+    <!-- Main Header -->
+    <header class="main-header">
+        <a href="/" class="logo">Deen™</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/index.html"><b>Home</b></a></li>
+                <li><a href="/life-in-our-home/index.html"><b>Life in our home</b></a></li>
+                <li><a href="/our-care"><b>Our Care</b></a></li>
+                <li><a href="/about"><b>About</b></a></li>
+                <li><a href="/get-in-touch"><b>Get in touch</b></a></li>
+                <li><a href="/book-your-stay/index.html" class="book-stay-btn"><b>Book Your Stay</b></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Think You Have What It Takes To Provide Exceptional Care For The Elderly?</h2>
+        <p>Check Out Our Current Vacancies Or Call Our Recruitment Hotline on 01724 410316</p>
+    </section>
+
+    <section class="content-section">
+        <h2>Current Vacancies</h2>
+        <ul class="vacancies-list">
+            <li>Care Assistant - Nights</li>
+            <li>Care Assistant - Days</li>
+            <li>Domestic Assistant</li>
+            <li>Kitchen Assistant</li>
+            <li>Housekeeper</li>
+        </ul>
+    </section>
+
+    <section class="content-section">
+        <div class="job-details">
+            <h3>Care Assistant - Nights</h3>
+            <p>Care Assistant (Nights) required to join our dedicated and hard working team at Sycamore Lodge Care Home, 2 Burringham Road, Scunthorpe, DN17 2BB</p>
+            <p>We pride ourselves on providing a safe, clean and comfortable home-from-home environment where we care respectfully and effectively for each resident like a dearly-loved member of our own family.</p>
+            
+            <h4>You will be required to:</h4>
+            <ul class="requirements-list">
+                <li>Provide personal care and attention for each resident, and follow the activities of daily living in accordance with the planned care</li>
+                <li>Work in a person-centred way, ensuring residents retain their dignity and individuality</li>
+                <li>Be involved in the general activities of the home</li>
+                <li>Maintain a safe and secure environment for all residents, staff members and visitors</li>
+            </ul>
+
+            <h4>Skills, Knowledge and Attitudes needed:</h4>
+            <ul class="requirements-list">
+                <li>A friendly, approachable, caring and helpful nature</li>
+                <li>A genuine commitment to providing our residents with the very highest standards of care</li>
+                <li>An ability to communicate effectively when speaking or writing, capable with numbers, and comfortable when using a computer</li>
+                <li>Motivation to work both individually and as part of a team</li>
+                <li>Willingness to complete all necessary training (Moving & Handling, Health & Safety, Safeguarding etc)</li>
+                <li>An ability to show Compassion, Empathy & Commitment to all within the home</li>
+            </ul>
+
+            <p><strong>Desirable:</strong> NVQ Level 2 qualification - or working towards this qualification would be desirable. However if your dedication and passion for the role is there, we will provide you with all necessary training and the chance to complete the NVQ if you join the team and successfully complete our probation period.</p>
+
+            <p><strong>Hours:</strong> 12 hour shifts working 8pm-8am</p>
+            <p><strong>Salary:</strong> £9.00 per hour - Full or Part time positions available</p>
+        </div>
+
+        <div class="job-details">
+            <h3>Domestic Assistant</h3>
+            <p>Domestic Assistant required to join our dedicated and hard working team at Sycamore Lodge Care Home, 2 Burringham Road, Scunthorpe, DN17 2BB</p>
+            
+            <h4>Duties will include, but are not limited to:</h4>
+            <ul class="requirements-list">
+                <li>Maintain the cleanliness and general tidiness of the home's communal areas, offices and residents' rooms and bathrooms</li>
+                <li>Ensure cleaning equipment is used and maintained correctly, and is stored in a safe and clean manner</li>
+                <li>Treat residents with dignity, respect their privacy and ensure their rights are protected at all times</li>
+                <li>Work effectively as part of our dedicated staff team</li>
+                <li>Ensure a safe environment is maintained within the home at all times for residents, staff and visitors</li>
+            </ul>
+
+            <h4>Skills, Knowledge and Attitudes needed:</h4>
+            <ul class="requirements-list">
+                <li>Follow all instructions and established procedures</li>
+                <li>Take pride in your work and pay attention to detail</li>
+                <li>Be able to work unsupervised as part of an effective staff team</li>
+                <li>Be prepared to undertake future training as required to maintain consistently high standards</li>
+            </ul>
+
+            <p><strong>Hours:</strong> Shift system - 8am-2pm and 10am-2pm</p>
+            <p><strong>Salary:</strong> £9 per hour</p>
+        </div>
+
+        <div class="job-details">
+            <h3>Kitchen Assistant</h3>
+            <p>Kitchen Assistant required to join our dedicated and hard working team at Sycamore Lodge Care Home, 2 Burringham Road, Scunthorpe, DN17 2BB</p>
+            
+            <h4>Duties will include, but are not limited to:</h4>
+            <ul class="requirements-list">
+                <li>Prepare meals, drinks and snacks for the residents taking into account dietary requirements and residents preferences</li>
+                <li>Prepare, serve and clear away after all meals in a timely fashion</li>
+                <li>Ensure that the highest standard of hygiene and cleanliness is maintained throughout the kitchen, to meet the required standards of practice prescribed by Environmental Health Agencies</li>
+            </ul>
+
+            <h4>Skills, Knowledge and Attitudes needed:</h4>
+            <ul class="requirements-list">
+                <li>Work effectively as part of the kitchen team</li>
+                <li>Ensure all equipment is used and maintained correctly, and is stored in a safe and clean manner</li>
+                <li>Follow instructions and established procedures</li>
+                <li>Be prepared to undertake future training as required to maintain consistently high standards</li>
+            </ul>
+
+            <p><strong>Hours:</strong> 10am-4pm on a rota system</p>
+            <p><strong>Salary:</strong> £9 per hour</p>
+        </div>
+
+        <div class="job-details">
+            <h3>Housekeeper</h3>
+            <p>Housekeeper required to join our dedicated and hard working team at Sycamore Lodge Care Home, 2 Burringham Road, Scunthorpe, DN17 2BB</p>
+            
+            <h4>Duties will include, but are not limited to:</h4>
+            <ul class="requirements-list">
+                <li>Organise, implement and supervise the cleaning and laundry services in the home in accordance with the agreed standards</li>
+                <li>Evaluate the standards of cleaning to ensure the highest standards are maintained at all times</li>
+                <li>Solve day to day problems which arise</li>
+                <li>Provide leadership to the domestic team and help to train new staff members</li>
+                <li>Complete all necessary housekeeping paperwork and documentation</li>
+                <li>Ensure the safety, dignity and wellbeing of our residents is protected at all times</li>
+            </ul>
+
+            <h4>Skills, Knowledge and Attitudes needed:</h4>
+            <ul class="requirements-list">
+                <li>Work successfully as part of a team and lead by example</li>
+                <li>Develop good working relationships with other staff members</li>
+                <li>Have good verbal and written communication skills</li>
+                <li>Be willing to undertake future training as needed to maintain consistently high standards</li>
+                <li>Show Compassion, Empathy & Commitment to all within the home</li>
+            </ul>
+
+            <p><strong>Hours:</strong> 32 hours per week with a rolling rota of shifts 10am-4pm, 7am-2pm, 8am-2pm</p>
+            <p><strong>Salary:</strong> £9 per hour</p>
+        </div>
+    </section>
+    <section class="apply-section">
+        <h2>Ready to Join Our Team?</h2>
+        <p>We're looking for dedicated individuals who are passionate about providing exceptional care.</p>
+        <p>Click below to fill out our application form:</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdK4l4EhYUew-lro4dOfvYKUC31lNvr425ObJVIP9Uvc_xHwQ/viewform?pli=1" class="apply-button">Apply Now</a>
+        <p>Or contact us directly:</p>
+        <p>Email: <a href="info@deencarehomes.com">info@deencarehomes.com</a></p>
+        <p>Phone: 01724 410316</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Deen Care Home | All Rights Reserved</p>
+    </footer>
